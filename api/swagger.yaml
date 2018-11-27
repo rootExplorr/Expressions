@@ -1,0 +1,409 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0"
+  title: "ExpressionService"
+  contact: {}
+host: "localhost:8080"
+basePath: "/"
+tags:
+- name: "ExpressionPortBinding"
+  description: ""
+schemes:
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /saveExpression:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "saveExpression"
+      operationId: "SaveExpressionPost"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/saveExpression"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/saveExpressionResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+  /getExpressions:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "getExpressions"
+      operationId: "GetExpressionsPost"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/getExpressions"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/getExpressionsResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+  /getExpression:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "getExpression"
+      operationId: "GetExpressionPost"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/getExpression"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/getExpressionResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+  /saveProfile:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "saveProfile"
+      operationId: "SaveProfilePost"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/saveProfile"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/saveProfileResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+  /getAcquaintances:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "getAcquaintances"
+      operationId: "GetAcquaintancesPost"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/getAcquaintances"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/getAcquaintancesResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+  /createUser:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "createUser"
+      operationId: "createUser"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/createUser"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/createUserResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+  /deleteUser:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "deleteUser"
+      operationId: "DeleteUserPost"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/deleteUser"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/deleteUserResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+  /editUser:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "editUser"
+      operationId: "EditUserPost"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/editUser"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/editUserResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+  /deleteExpression:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "deleteExpression"
+      operationId: "deleteExpression"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/deleteExpression"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/deleteExpressionResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+  /getUser:
+    post:
+      tags:
+      - "ExpressionPortBinding"
+      summary: "getUser"
+      operationId: "GetUserPost"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "Body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/getUser"
+      responses:
+        200:
+          description: ""
+          schema:
+            $ref: "#/definitions/getUserResponse"
+      x-swagger-router-controller: "ExpressionPortBinding"
+definitions:
+  saveExpressionResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "saveExpressionResponse"
+    example:
+      parameters: "parameters"
+  getExpressionsResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "getExpressionsResponse"
+    example:
+      parameters: "parameters"
+  getExpressionResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "getExpressionResponse"
+    example:
+      parameters: "parameters"
+  saveProfileResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "saveProfileResponse"
+    example:
+      parameters: "parameters"
+  getAcquaintancesResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "getAcquaintancesResponse"
+    example:
+      parameters: "parameters"
+  createUserResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "createUserResponse"
+    example:
+      parameters: "parameters"
+  deleteUserResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "deleteUserResponse"
+    example:
+      parameters: "parameters"
+  editUserResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "editUserResponse"
+    example:
+      parameters: "parameters"
+  deleteExpressionResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "deleteExpressionResponse"
+    example:
+      parameters: "parameters"
+  getUserResponse:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "getUserResponse"
+    example:
+      parameters: "parameters"
+  saveExpression:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "saveExpression"
+  getExpressions:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "getExpressions"
+  getExpression:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "getExpression"
+  saveProfile:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "saveProfile"
+  getAcquaintances:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "getAcquaintances"
+  createUser:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "createUser"
+  deleteUser:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "deleteUser"
+  editUser:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "editUser"
+  deleteExpression:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "deleteExpression"
+  getUser:
+    type: "object"
+    required:
+    - "parameters"
+    properties:
+      parameters:
+        type: "string"
+    title: "getUser"
